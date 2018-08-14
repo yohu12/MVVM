@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
   signingConfigs {
     relealse {
-      keyAlias 'ariaLyy'
+      keyAlias 'yunban'
       keyPassword '123456'
-      storeFile file('D:/test/AbsFrame.jks')
+      storeFile file('D:/android_key/yunban.jks')
       storePassword '123456'
     }
   }
@@ -39,6 +39,7 @@ dependencies {
   compile 'com.android.support:appcompat-v7:23.2.0'
   compile 'com.android.support:design:23.2.0'
   compile 'com.arialyy.absadapter:AbsAdapter:1.1.0'
+  compile 'com.orhanobut:logger:2.1.1'
   //    compile 'com.arialyy.frame:MVVM2:2.0.0_dev'
   compile project(':mvvm2')
 }
